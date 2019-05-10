@@ -6,9 +6,10 @@ def run_guessing_game
     number = gets.chomp 
    if number == comp_num 
     puts "You guessed the correct number!"
-  elsif number == "exit" 
+   elsif number == "exit" 
     puts "Goodbye!"
-  else
+   break 
+   else
     puts "The computer guessed #{comp_num}."
  end 
  end
